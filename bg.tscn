@@ -115,7 +115,6 @@ margin/bottom = 92.0
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.851562, 0.265074, 0.12973, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-text = "Привет!"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
