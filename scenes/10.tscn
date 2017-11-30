@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://assets/SpectralSC-Bold.fnt" type="BitmapFont" id=1]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "adelmp"
+length = 25.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:text")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 3.1, 4.5, 6.6, 8.7, 11, 12.6, 14.8, 17.2 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "Маленький принц посещает много разных планет.", "Одной из них была Земля.", "Там в пустыне он встречает змею,", "в людном месте он встретил торговца,", "возле станции он встретил стрелочника,", "потом он встретил лиса,", "и наконец он встретил сад роз.", "Самого последнего он встретил летчика.", "Маленький принц рассказал ему о себе, о его планете." ]
+}
+
+[node name="Label" type="Label"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 88.0
+margin/top = 71.0
+margin/right = 555.0
+margin/bottom = 122.0
+custom_fonts/font = ExtResource( 1 )
+text = "Маленький принц посещает много разных планет."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/adelmp = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "adelmp"
+
+

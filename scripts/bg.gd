@@ -20,7 +20,7 @@ func _on_YesButton_pressed():
 	#need to set the scene to second one
 
 func _on_NoButton_pressed():
-	pass #set scene to three
+	get_tree().change_scene("res://scenes/10.tscn")
 
 
 func _on_textAnim_finished():
